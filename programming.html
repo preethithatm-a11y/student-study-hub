@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Programming | Student Study Hub</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Student Study Hub</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <li><a href="subjects.html" class="nav-link"><i class="fa-solid fa-book-open"></i> Subjects</a></li>
+        <li><a href="study-materials.html" class="nav-link"><i class="fa-solid fa-folder-open"></i> Materials</a></li>
+        <li><a href="ai-ml.html" class="nav-link"><i class="fa-solid fa-brain"></i> AI & ML</a></li>
+        <li><a href="programming.html" class="nav-link"><i class="fa-solid fa-code"></i> Programming</a></li>
+        <li><a href="quiz.html" class="nav-link"><i class="fa-solid fa-pen-to-square"></i> Quiz</a></li>
+        <li><a href="study-tips.html" class="nav-link"><i class="fa-solid fa-lightbulb"></i> Tips</a></li>
+        <li><a href="resources.html" class="nav-link"><i class="fa-solid fa-globe"></i> Resources</a></li>
+        <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="header-content">
+      <span class="badge"><i class="fa-brands fa-python"></i> Python Core Guide</span>
+      <h1>Programming Basics & Code Examples</h1>
+      <p>Master Python fundamentals: Variables, Data Types, Operators, Conditions, Loops, and Functions with copyable code snippets.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="section">
+      <div class="container">
+        
+        <!-- Quick Topic Navigation -->
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2.5rem; justify-content: center;">
+          <a href="#variables" class="btn btn-secondary btn-sm"><i class="fa-solid fa-box"></i> Variables</a>
+          <a href="#datatypes" class="btn btn-secondary btn-sm"><i class="fa-solid fa-database"></i> Data Types</a>
+          <a href="#operators" class="btn btn-secondary btn-sm"><i class="fa-solid fa-calculator"></i> Operators</a>
+          <a href="#conditions" class="btn btn-secondary btn-sm"><i class="fa-solid fa-code-branch"></i> Conditions</a>
+          <a href="#loops" class="btn btn-secondary btn-sm"><i class="fa-solid fa-rotate"></i> Loops</a>
+          <a href="#functions" class="btn btn-secondary btn-sm"><i class="fa-solid fa-gears"></i> Functions</a>
+        </div>
+
+        <!-- 1. Variables -->
+        <div id="variables" class="card" style="margin-bottom: 2rem;">
+          <div class="card-icon"><i class="fa-solid fa-box"></i></div>
+          <h3>1. Variables in Python</h3>
+          <p>Variables are containers for storing data values. Python has no command for declaring a variable; a variable is created the moment you first assign a value to it.</p>
+          
+          <div class="code-container">
+            <div class="code-header">
+              <span>python_variables.py</span>
+              <button class="code-copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+            </div>
+            <pre><code># Variable Assignment Examples
+student_name = "Rahul Sharma"  # String
+student_age = 20                # Integer
+gpa = 3.85                      # Float
+is_enrolled = True              # Boolean
+
+print("Student:", student_name)
+print("Age:", student_age, "| GPA:", gpa)</code></pre>
+            <div class="code-output">
+              Output:<br>
+              Student: Rahul Sharma<br>
+              Age: 20 | GPA: 3.85
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Data Types -->
+        <div id="datatypes" class="card" style="margin-bottom: 2rem;">
+          <div class="card-icon purple"><i class="fa-solid fa-database"></i></div>
+          <h3>2. Python Data Types</h3>
+          <p>Python built-in data types include integers (int), floating-point numbers (float), strings (str), lists (list), tuples (tuple), and dictionaries (dict).</p>
+          
+          <div class="code-container">
+            <div class="code-header">
+              <span>data_types.py</span>
+              <button class="code-copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+            </div>
+            <pre><code># Python Data Types
+subjects = ["Python", "AI", "Machine Learning", "DSA"]  # List
+student_profile = {"name": "Preethitha", "course": "BCA AI&ML", "semester": 3} # Dictionary
+coordinates = (12.9716, 77.5946)                        # Tuple
+
+print("Subjects List:", subjects[0:2])
+print("Student Course:", student_profile["course"])</code></pre>
+            <div class="code-output">
+              Output:<br>
+              Subjects List: ['Python', 'AI']<br>
+              Student Course: BCA AI&ML
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Operators -->
+        <div id="operators" class="card" style="margin-bottom: 2rem;">
+          <div class="card-icon cyan"><i class="fa-solid fa-calculator"></i></div>
+          <h3>3. Python Operators</h3>
+          <p>Operators perform operations on variables and values. Common types: Arithmetic (+, -, *, /), Comparison (==, !=, >, <), and Logical (and, or, not).</p>
+          
+          <div class="code-container">
+            <div class="code-header">
+              <span>operators_demo.py</span>
+              <button class="code-copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+            </div>
+            <pre><code># Operators in Python
+marks_python = 85
+marks_ai = 90
+
+total_score = marks_python + marks_ai
+average = total_score / 2
+is_distinction = average >= 85 and marks_python > 80
+
+print("Average Score:", average)
+print("Is Distinction:", is_distinction)</code></pre>
+            <div class="code-output">
+              Output:<br>
+              Average Score: 87.5<br>
+              Is Distinction: True
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Conditional Statements -->
+        <div id="conditions" class="card" style="margin-bottom: 2rem;">
+          <div class="card-icon green"><i class="fa-solid fa-code-branch"></i></div>
+          <h3>4. Conditional Statements (if...elif...else)</h3>
+          <p>Conditional statements control decision-making logic in programs based on specified boolean conditions.</p>
+          
+          <div class="code-container">
+            <div class="code-header">
+              <span>conditions.py</span>
+              <button class="code-copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+            </div>
+            <pre><code># Grade Evaluator Program
+score = 88
+
+if score >= 90:
+    grade = "A+"
+elif score >= 80:
+    grade = "A"
+elif score >= 70:
+    grade = "B"
+else:
+    grade = "C"
+
+print(f"Final Score: {score} | Grade: {grade}")</code></pre>
+            <div class="code-output">
+              Output:<br>
+              Final Score: 88 | Grade: A
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Loops -->
+        <div id="loops" class="card" style="margin-bottom: 2rem;">
+          <div class="card-icon"><i class="fa-solid fa-rotate"></i></div>
+          <h3>5. Loops (for & while)</h3>
+          <p>Loops are used to iterate over sequences (like lists or ranges) or execute code blocks repeatedly while a condition remains true.</p>
+          
+          <div class="code-container">
+            <div class="code-header">
+              <span>loops_demo.py</span>
+              <button class="code-copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+            </div>
+            <pre><code># Iterating over a list of AI topics
+ai_topics = ["Neural Networks", "NLP", "Computer Vision"]
+
+print("--- For Loop ---")
+for topic in ai_topics:
+    print("Studying:", topic)
+
+print("\n--- While Loop ---")
+count = 1
+while count <= 3:
+    print("Iteration:", count)
+    count += 1</code></pre>
+            <div class="code-output">
+              Output:<br>
+              --- For Loop ---<br>
+              Studying: Neural Networks<br>
+              Studying: NLP<br>
+              Studying: Computer Vision<br>
+              --- While Loop ---<br>
+              Iteration: 1<br>
+              Iteration: 2<br>
+              Iteration: 3
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Functions -->
+        <div id="functions" class="card" style="margin-bottom: 2rem;">
+          <div class="card-icon purple"><i class="fa-solid fa-gears"></i></div>
+          <h3>6. Python Functions</h3>
+          <p>A function is a reusable block of code defined using the `def` keyword that executes only when called and can accept parameters and return values.</p>
+          
+          <div class="code-container">
+            <div class="code-header">
+              <span>functions_demo.py</span>
+              <button class="code-copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+            </div>
+            <pre><code># Function to calculate Euclidean distance (basic AI math helper)
+import math
+
+def calculate_distance(x1, y1, x2, y2):
+    """Returns distance between two 2D points"""
+    dist = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+    return round(dist, 2)
+
+# Function call
+d = calculate_distance(0, 0, 3, 4)
+print("Distance between (0,0) and (3,4) is:", d)</code></pre>
+            <div class="code-output">
+              Output:<br>
+              Distance between (0,0) and (3,4) is: 5.0
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Student Study Hub</span>
+        </div>
+        <p>A comprehensive static academic web portal built for college students specializing in BCA AI & Machine Learning. Designed for Task 5 Practical Examination.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="subjects.html">Subjects</a>
+          <a href="study-materials.html">Study Materials</a>
+          <a href="ai-ml.html">AI & ML</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Learning Hub</h4>
+        <div class="footer-links">
+          <a href="programming.html">Programming</a>
+          <a href="quiz.html">Interactive Quiz</a>
+          <a href="study-tips.html">Study Tips</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Course Info</h4>
+        <div class="footer-links">
+          <span style="color: #cbd5e1; font-size: 0.88rem;"><i class="fa-solid fa-book"></i> BCA AI & ML</span>
+          <span style="color: #cbd5e1; font-size: 0.88rem;"><i class="fa-solid fa-laptop-code"></i> Practical Task 5</span>
+          <span style="color: #cbd5e1; font-size: 0.88rem;"><i class="fa-solid fa-building-columns"></i> College Academic Portal</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Student Study Hub. All rights reserved. Built with HTML5, CSS3 & JavaScript.</p>
+      <p>Designed for BCA AI & ML Practical Task 5</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

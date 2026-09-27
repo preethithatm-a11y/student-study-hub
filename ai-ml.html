@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI & ML Hub | Student Study Hub</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Student Study Hub</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <li><a href="subjects.html" class="nav-link"><i class="fa-solid fa-book-open"></i> Subjects</a></li>
+        <li><a href="study-materials.html" class="nav-link"><i class="fa-solid fa-folder-open"></i> Materials</a></li>
+        <li><a href="ai-ml.html" class="nav-link"><i class="fa-solid fa-brain"></i> AI & ML</a></li>
+        <li><a href="programming.html" class="nav-link"><i class="fa-solid fa-code"></i> Programming</a></li>
+        <li><a href="quiz.html" class="nav-link"><i class="fa-solid fa-pen-to-square"></i> Quiz</a></li>
+        <li><a href="study-tips.html" class="nav-link"><i class="fa-solid fa-lightbulb"></i> Tips</a></li>
+        <li><a href="resources.html" class="nav-link"><i class="fa-solid fa-globe"></i> Resources</a></li>
+        <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="header-content">
+      <span class="badge"><i class="fa-solid fa-robot"></i> Specialization Portal</span>
+      <h1>Artificial Intelligence & Machine Learning</h1>
+      <p>Explore fundamental concepts, core algorithms, real-world applications, and a step-by-step roadmap for BCA students entering AI.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Introduction Section -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2">
+          <div class="card" style="border-top: 4px solid var(--primary);">
+            <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>What is Artificial Intelligence (AI)?</h3>
+            <p style="margin-bottom: 1rem;">
+              Artificial Intelligence refers to the simulation of human intelligence in machines programmed to think, reason, learn, and solve complex problems autonomously.
+            </p>
+            <p>
+              It encompasses subfields such as Knowledge Representation, Heuristic Search, Natural Language Processing (NLP), Expert Systems, Computer Vision, and Robotics.
+            </p>
+          </div>
+
+          <div class="card" style="border-top: 4px solid var(--secondary);">
+            <div class="card-icon purple"><i class="fa-solid fa-diagram-project"></i></div>
+            <h3>What is Machine Learning (ML)?</h3>
+            <p style="margin-bottom: 1rem;">
+              Machine Learning is a subset of AI that focuses on building mathematical models and algorithms that enable computers to learn from experience (data) without being explicitly programmed.
+            </p>
+            <p>
+              Key paradigms include Supervised Learning (predicting labels), Unsupervised Learning (finding hidden patterns), and Reinforcement Learning (reward-based learning).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Concepts Grid -->
+    <section class="section" style="background: var(--light-card); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header">
+          <h2>Core Concepts Every BCA Student Must Know</h2>
+          <p>Key pillars of modern AI & Machine Learning systems.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <div class="card" style="padding: 1.5rem;">
+            <div class="card-icon cyan" style="width: 44px; height: 44px; font-size: 1.2rem;"><i class="fa-solid fa-chart-pie"></i></div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Supervised Learning</h4>
+            <p style="font-size: 0.88rem; margin: 0;">Models trained on labeled data to perform classification and numerical regression tasks.</p>
+          </div>
+
+          <div class="card" style="padding: 1.5rem;">
+            <div class="card-icon purple" style="width: 44px; height: 44px; font-size: 1.2rem;"><i class="fa-solid fa-circle-nodes"></i></div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Unsupervised Learning</h4>
+            <p style="font-size: 0.88rem; margin: 0;">Discovers hidden groupings or clusters (K-Means, PCA) in unlabeled datasets.</p>
+          </div>
+
+          <div class="card" style="padding: 1.5rem;">
+            <div class="card-icon green" style="width: 44px; height: 44px; font-size: 1.2rem;"><i class="fa-solid fa-network-wired"></i></div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Neural Networks</h4>
+            <p style="font-size: 0.88rem; margin: 0;">Multi-layered computational models inspired by biological human brain neurons.</p>
+          </div>
+
+          <div class="card" style="padding: 1.5rem;">
+            <div class="card-icon" style="width: 44px; height: 44px; font-size: 1.2rem;"><i class="fa-solid fa-language"></i></div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Natural Language (NLP)</h4>
+            <p style="font-size: 0.88rem; margin: 0;">Enables machines to parse, translate, synthesize, and comprehend human languages.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Real-World Applications -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Real-World Applications of AI & ML</h2>
+          <p>How artificial intelligence powers modern industries and daily applications.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="card-icon"><i class="fa-solid fa-hospital-user"></i></div>
+            <h3>Healthcare Diagnostics</h3>
+            <p>AI algorithms detect diseases in medical imaging (MRI/X-Rays), predict patient risk factors, and accelerate pharmaceutical drug discovery.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon purple"><i class="fa-solid fa-piggy-bank"></i></div>
+            <h3>Finance & Fraud Prevention</h3>
+            <p>Real-time transaction monitoring flags credit card fraud, automates algorithmic stock trading, and evaluates credit risk profiles.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon cyan"><i class="fa-solid fa-car-side"></i></div>
+            <h3>Autonomous Vehicles</h3>
+            <p>Self-driving cars leverage computer vision, LiDAR sensor fusion, and deep reinforcement learning for real-time navigation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beginner Learning Roadmap Timeline -->
+    <section class="section" style="background: var(--light-card); border-top: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header">
+          <h2>Beginner AI & ML Learning Roadmap</h2>
+          <p>A step-by-step pathway for college students starting from scratch.</p>
+        </div>
+
+        <div class="timeline">
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>Step 1: Programming Fundamentals</h4>
+              <p style="font-size: 0.92rem; color: var(--text-muted);">Master Python syntax, loops, data structures, list comprehensions, and functional programming.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>Step 2: Mathematics & Statistics</h4>
+              <p style="font-size: 0.92rem; color: var(--text-muted);">Learn Linear Algebra (Matrices, Vectors), Calculus (Gradients), Probability, and Descriptive Statistics.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>Step 3: Data Analysis & Visualization</h4>
+              <p style="font-size: 0.92rem; color: var(--text-muted);">Explore NumPy array manipulation, Pandas DataFrames, and plot charts using Matplotlib and Seaborn.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>Step 4: Supervised & Unsupervised ML</h4>
+              <p style="font-size: 0.92rem; color: var(--text-muted);">Build models using Scikit-Learn: Linear Regression, Logistic Regression, Decision Trees, KNN, and K-Means.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>Step 5: Deep Learning & Frameworks</h4>
+              <p style="font-size: 0.92rem; color: var(--text-muted);">Understand Neural Networks, Artificial Neural Networks (ANN), and train models using TensorFlow or PyTorch.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Student Study Hub</span>
+        </div>
+        <p>A comprehensive static academic web portal built for college students specializing in BCA AI & Machine Learning. Designed for Task 5 Practical Examination.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="subjects.html">Subjects</a>
+          <a href="study-materials.html">Study Materials</a>
+          <a href="ai-ml.html">AI & ML</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Learning Hub</h4>
+        <div class="footer-links">
+          <a href="programming.html">Programming</a>
+          <a href="quiz.html">Interactive Quiz</a>
+          <a href="study-tips.html">Study Tips</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Course Info</h4>
+        <div class="footer-links">
+          <span style="color: #cbd5e1; font-size: 0.88rem;"><i class="fa-solid fa-book"></i> BCA AI & ML</span>
+          <span style="color: #cbd5e1; font-size: 0.88rem;"><i class="fa-solid fa-laptop-code"></i> Practical Task 5</span>
+          <span style="color: #cbd5e1; font-size: 0.88rem;"><i class="fa-solid fa-building-columns"></i> College Academic Portal</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Student Study Hub. All rights reserved. Built with HTML5, CSS3 & JavaScript.</p>
+      <p>Designed for BCA AI & ML Practical Task 5</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

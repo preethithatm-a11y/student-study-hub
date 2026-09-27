@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Materials | Student Study Hub</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Student Study Hub</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <li><a href="subjects.html" class="nav-link"><i class="fa-solid fa-book-open"></i> Subjects</a></li>
+        <li><a href="study-materials.html" class="nav-link"><i class="fa-solid fa-folder-open"></i> Materials</a></li>
+        <li><a href="ai-ml.html" class="nav-link"><i class="fa-solid fa-brain"></i> AI & ML</a></li>
+        <li><a href="programming.html" class="nav-link"><i class="fa-solid fa-code"></i> Programming</a></li>
+        <li><a href="quiz.html" class="nav-link"><i class="fa-solid fa-pen-to-square"></i> Quiz</a></li>
+        <li><a href="study-tips.html" class="nav-link"><i class="fa-solid fa-lightbulb"></i> Tips</a></li>
+        <li><a href="resources.html" class="nav-link"><i class="fa-solid fa-globe"></i> Resources</a></li>
+        <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="header-content">
+      <span class="badge"><i class="fa-solid fa-download"></i> Academic Downloads</span>
+      <h1>Study Materials & Question Papers</h1>
+      <p>Access subject lecture notes, previous year university question papers, model question banks, and lab manuals designed for BCA AI & ML.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="section">
+      <div class="container">
+        
+        <!-- Category Filter Buttons -->
+        <div class="material-filter">
+          <button class="filter-btn active" onclick="filterMaterials('all')"><i class="fa-solid fa-grid-2"></i> All Materials</button>
+          <button class="filter-btn" onclick="filterMaterials('notes')"><i class="fa-solid fa-book"></i> Lecture Notes</button>
+          <button class="filter-btn" onclick="filterMaterials('paper')"><i class="fa-solid fa-file-invoice"></i> Past Papers</button>
+          <button class="filter-btn" onclick="filterMaterials('questions')"><i class="fa-solid fa-clipboard-question"></i> Important Questions</button>
+        </div>
+
+        <div class="grid grid-3" id="materials-grid">
+          
+          <!-- Item 1: Python Notes -->
+          <div class="material-card" data-category="notes">
+            <div class="material-header">
+              <span class="material-type type-notes">Lecture Notes</span>
+              <span style="color: var(--text-muted); font-size: 0.8rem;"><i class="fa-regular fa-file-pdf"></i> PDF</span>
+            </div>
+            <h3>Python Core Programming Notes</h3>
+            <p>Comprehensive unit-wise notes covering variables, data types, OOPs concepts, NumPy arrays, and Exception handling.</p>
+            <div class="material-meta">
+              <span><i class="fa-solid fa-book"></i> Python</span>
+              <span><i class="fa-solid fa-database"></i> 3.8 MB</span>
+            </div>
+            <button class="btn btn-primary btn-sm download-btn" data-material="Python Core Notes PDF"><i class="fa-solid fa-download"></i> Download Notes</button>
+          </div>
+
+          <!-- Item 2: AI Past Paper -->
+          <div class="material-card" data-category="paper">
+            <div class="material-header">
+              <span class="material-type type-paper">Question Paper</span>
+              <span style="color: var(--text-muted); font-size: 0.8rem;"><i class="fa-regular fa-calendar-check"></i> 2025</span>
+            </div>
+            <h3>Artificial Intelligence Sem-3 Exam Paper</h3>
+            <p>Original university end-semester question paper with answer keys for BFS, DFS, and Expert Systems.</p>
+            <div class="material-meta">
+              <span><i class="fa-solid fa-brain"></i> AI</span>
+              <span><i class="fa-solid fa-database"></i> 1.5 MB</span>
+            </div>
+            <button class="btn btn-secondary btn-sm download-btn" data-material="AI 2025 Exam Paper PDF"><i class="fa-solid fa-download"></i> Download Paper</button>
+          </div>
+
+          <!-- Item 3: ML Important Questions -->
+          <div class="material-card" data-category="questions">
+            <div class="material-header">
+              <span class="material-type type-questions">Question Bank</span>
+              <span style="color: var(--text-muted); font-size: 0.8rem;"><i class="fa-solid fa-star" style="color:#eab308;"></i> High Priority</span>
+            </div>
+            <h3>Machine Learning Top 50 Exam Questions</h3>
+            <p>Curated list of frequently asked 5-mark and 10-mark questions on Regression, Decision Trees, and K-Means.</p>
+            <div class="material-meta">
+              <span><i class="fa-solid fa-diagram-project"></i> ML</span>
+              <span><i class="fa-solid fa-database"></i> 2.1 MB</span>
+            </div>
+            <button class="btn btn-accent btn-sm download-btn" data-material="ML Top 50 Questions PDF"><i class="fa-solid fa-download"></i> Download Question Bank</button>
+          </div>
+
+          <!-- Item 4: Data Structures Notes -->
+          <div class="material-card" data-category="notes">
+            <div class="material-header">
+              <span class="material-type type-notes">Lecture Notes</span>
+              <span style="color: var(--text-muted); font-size: 0.8rem;"><i class="fa-regular fa-file-pdf"></i> PDF</span>
+            </div>
+            <h3>Data Structures & Algorithms Notes</h3>
+            <p>Detailed explanation of Stack operations, Queue implementation, BST traversals, and Sorting algorithms with C++/Python code.</p>
+            <div class="material-meta">
+              <span><i class="fa-solid fa-sitemap"></i> DSA</span>
+              <span><i class="fa-solid fa-database"></i> 4.5 MB</span>
+            </div>
+            <button class="btn btn-primary btn-sm download-btn" data-material="DSA Complete Notes PDF"><i class="fa-solid fa-download"></i> Download Notes</button>
+          </div>
+
+          <!-- Item 5: Operating Systems Past Paper -->
+          <div class="material-card" data-category="paper">
+            <div class="material-header">
+              <span class="material-type type-paper">Question Paper</span>
+              <span style="color: var(--text-muted); font-size: 0.8rem;"><i class="fa-regular fa-calendar-check"></i> 2024</span>
+            </div>
+            <h3>Operating Systems Solved Question Paper</h3>
+            <p>Previous year semester exam paper covering CPU Scheduling numerical problems, Deadlock prevention, and Paging.</p>
+            <div class="material-meta">
+              <span><i class="fa-solid fa-microchip"></i> OS</span>
+              <span><i class="fa-solid fa-database"></i> 2.8 MB</span>
+            </div>
+            <button class="btn btn-secondary btn-sm download-btn" data-material="OS Solved Paper 2024 PDF"><i class="fa-solid fa-download"></i> Download Paper</button>
+          </div>
+
+          <!-- Item 6: Computer Networks Important Questions -->
+          <div class="material-card" data-category="questions">
+            <div class="material-header">
+              <span class="material-type type-questions">Question Bank</span>
+              <span style="color: var(--text-muted); font-size: 0.8rem;"><i class="fa-solid fa-star" style="color:#eab308;"></i> Exam Special</span>
+            </div>
+            <h3>Computer Networks 100 Objective Questions</h3>
+            <p>Multiple choice and short answer question bank covering OSI Model, TCP/IP headers, IPv4 subnetting calculations, and routing protocols.</p>
+            <div class="material-meta">
+              <span><i class="fa-solid fa-network-wired"></i> Networks</span>
+              <span><i class="fa-solid fa-database"></i> 1.9 MB</span>
+            </div>
+            <button class="btn btn-accent btn-sm download-btn" data-material="CN 100 Question Bank PDF"><i class="fa-solid fa-download"></i> Download Question Bank</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- JavaScript for Filtering -->
+  <script>
+    function filterMaterials(cat) {
+      const btns = document.querySelectorAll('.filter-btn');
+      btns.forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const cards = document.querySelectorAll('.material-card');
+      cards.forEach(card => {
+        if (cat === 'all' || card.getAttribute('data-category') === cat) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Student Study Hub</span>
+        </div>
+        <p>A comprehensive static academic web portal built for college students specializing in BCA AI & Machine Learning. Designed for Task 5 Practical Examination.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="subjects.html">Subjects</a>
+          <a href="study-materials.html">Study Materials</a>
+          <a href="ai-ml.html">AI & ML</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Learning Hub</h4>
+        <div class="footer-links">
+          <a href="programming.html">Programming</a>
+          <a href="quiz.html">Interactive Quiz</a>
+          <a href="study-tips.html">Study Tips</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Course Info</h4>
+        <div class="footer-links">
+          <span style="color: #cbd5e1; font-size: 0.88rem;"><i class="fa-solid fa-book"></i> BCA AI & ML</span>
+          <span style="color: #cbd5e1; font-size: 0.88rem;"><i class="fa-solid fa-laptop-code"></i> Practical Task 5</span>
+          <span style="color: #cbd5e1; font-size: 0.88rem;"><i class="fa-solid fa-building-columns"></i> College Academic Portal</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Student Study Hub. All rights reserved. Built with HTML5, CSS3 & JavaScript.</p>
+      <p>Designed for BCA AI & ML Practical Task 5</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

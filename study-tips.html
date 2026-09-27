@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Tips & Techniques | Student Study Hub</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Student Study Hub</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <li><a href="subjects.html" class="nav-link"><i class="fa-solid fa-book-open"></i> Subjects</a></li>
+        <li><a href="study-materials.html" class="nav-link"><i class="fa-solid fa-folder-open"></i> Materials</a></li>
+        <li><a href="ai-ml.html" class="nav-link"><i class="fa-solid fa-brain"></i> AI & ML</a></li>
+        <li><a href="programming.html" class="nav-link"><i class="fa-solid fa-code"></i> Programming</a></li>
+        <li><a href="quiz.html" class="nav-link"><i class="fa-solid fa-pen-to-square"></i> Quiz</a></li>
+        <li><a href="study-tips.html" class="nav-link"><i class="fa-solid fa-lightbulb"></i> Tips</a></li>
+        <li><a href="resources.html" class="nav-link"><i class="fa-solid fa-globe"></i> Resources</a></li>
+        <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="header-content">
+      <span class="badge"><i class="fa-solid fa-lightbulb"></i> Productivity & Success</span>
+      <h1>Effective Study Tips & Strategies</h1>
+      <p>Boost your academic performance with proven time management techniques, smart note-taking methods, exam prep guides, and interactive Pomodoro focus tools.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Interactive Pomodoro Timer Widget -->
+    <section class="section">
+      <div class="container">
+        <div class="pomodoro-card">
+          <span class="badge" style="background: rgba(255,255,255,0.15);"><i class="fa-solid fa-stopwatch"></i> Productivity Tool</span>
+          <h2 style="color: #ffffff; font-size: 1.8rem; margin-top: 0.5rem;">Interactive Pomodoro Timer</h2>
+          <p style="color: #cbd5e1; font-size: 0.95rem;">Work focused for 25 minutes, then take a 5-minute mental break.</p>
+          
+          <div class="timer-display" id="pomodoro-display">25:00</div>
+          
+          <div class="timer-controls">
+            <button id="pomo-start" class="btn btn-primary"><i class="fa-solid fa-play"></i> Start Focus</button>
+            <button id="pomo-pause" class="btn btn-secondary" disabled><i class="fa-solid fa-pause"></i> Pause</button>
+            <button id="pomo-reset" class="btn btn-outline"><i class="fa-solid fa-rotate-right"></i> Reset</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Essential Study Tips Cards -->
+    <section class="section" style="background: var(--light-card); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header">
+          <h2>5 Proven Academic Techniques</h2>
+          <p>Scientific strategies to optimize your study routines and retain complex topics.</p>
+        </div>
+
+        <div class="grid grid-3">
+          
+          <!-- Tip 1: Time Management -->
+          <div class="card">
+            <div class="card-icon"><i class="fa-solid fa-clock"></i></div>
+            <h3>1. Time Management</h3>
+            <p>Use the Eisenhower Matrix to prioritize urgent vs important study tasks. Allocate dedicated study blocks for heavy coding and mathematical subjects like AI/ML.</p>
+            <ul style="font-size: 0.88rem; color: var(--text-muted); list-style: disc; margin-left: 1.25rem;">
+              <li>Set realistic daily revision goals</li>
+              <li>Avoid last-minute cramming</li>
+              <li>Track progress using weekly planners</li>
+            </ul>
+          </div>
+
+          <!-- Tip 2: Effective Note-Taking -->
+          <div class="card">
+            <div class="card-icon purple"><i class="fa-solid fa-pen-nib"></i></div>
+            <h3>2. Effective Note-Taking</h3>
+            <p>Adopt the Cornell Note-Taking System: divide pages into Cues, Notes, and Summaries. Create mind maps for complex algorithm flows like decision trees.</p>
+            <ul style="font-size: 0.88rem; color: var(--text-muted); list-style: disc; margin-left: 1.25rem;">
+              <li>Write code snippets by hand during revision</li>
+              <li>Use color-coded key terms</li>
+              <li>Summarize topics in your own words</li>
+            </ul>
+          </div>
+
+          <!-- Tip 3: Exam Preparation -->
+          <div class="card">
+            <div class="card-icon cyan"><i class="fa-solid fa-file-signature"></i></div>
+            <h3>3. Smart Exam Preparation</h3>
+            <p>Solve at least 3 previous years' question papers under timed exam conditions. Focus heavily on high-weightage topics like Data Structures and OS Scheduling.</p>
+            <ul style="font-size: 0.88rem; color: var(--text-muted); list-style: disc; margin-left: 1.25rem;">
+              <li>Practice numerical problem solving</li>
+              <li>Create quick formula flashcards</li>
+              <li>Teach concepts to study partners</li>
+            </ul>
+          </div>
+
+          <!-- Tip 4: The Pomodoro Technique -->
+          <div class="card">
+            <div class="card-icon green"><i class="fa-solid fa-hourglass-half"></i></div>
+            <h3>4. The Pomodoro Technique</h3>
+            <p>Study in 25-minute uninterrupted intervals followed by short 5-minute breaks. After completing 4 sessions, reward yourself with a longer 20-30 minute break.</p>
+            <ul style="font-size: 0.88rem; color: var(--text-muted); list-style: disc; margin-left: 1.25rem;">
+              <li>Prevents mental fatigue & burnout</li>
+              <li>Improves deep focus on coding tasks</li>
+              <li>Builds consistent daily study momentum</li>
+            </ul>
+          </div>
+
+          <!-- Tip 5: Reducing Distractions -->
+          <div class="card">
+            <div class="card-icon" style="background: #fee2e2; color: #dc2626;"><i class="fa-solid fa-ban-smoking"></i></div>
+            <h3>5. Eliminating Distractions</h3>
+            <p>Create a dedicated, clutter-free study desk. Turn off non-essential smartphone notifications, use site blockers during study hours, and play ambient instrumental music.</p>
+            <ul style="font-size: 0.88rem; color: var(--text-muted); list-style: disc; margin-left: 1.25rem;">
+              <li>Use 'Do Not Disturb' mobile mode</li>
+              <li>Keep study space clean & organized</li>
+              <li>Stay hydrated and take short walks</li>
+            </ul>
+          </div>
+
+          <!-- Tip 6: Healthy Study Habits -->
+          <div class="card">
+            <div class="card-icon" style="background: #fef3c7; color: #d97706;"><i class="fa-solid fa-heart-pulse"></i></div>
+            <h3>6. Physical & Mental Wellness</h3>
+            <p>Ensure 7-8 hours of sleep before exam days. Memory consolidation occurs during deep REM sleep, helping long-term recall of programming algorithms.</p>
+            <ul style="font-size: 0.88rem; color: var(--text-muted); list-style: disc; margin-left: 1.25rem;">
+              <li>Maintain regular sleep schedules</li>
+              <li>Eat brain-healthy foods</li>
+              <li>Practice short 5-min mindfulness breathing</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Student Study Hub</span>
+        </div>
+        <p>A comprehensive static academic web portal built for college students specializing in BCA AI & Machine Learning. Designed for Task 5 Practical Examination.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="subjects.html">Subjects</a>
+          <a href="study-materials.html">Study Materials</a>
+          <a href="ai-ml.html">AI & ML</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Learning Hub</h4>
+        <div class="footer-links">
+          <a href="programming.html">Programming</a>
+          <a href="quiz.html">Interactive Quiz</a>
+          <a href="study-tips.html">Study Tips</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Course Info</h4>
+        <div class="footer-links">
+          <span style="color: #cbd5e1; font-size: 0.88rem;"><i class="fa-solid fa-book"></i> BCA AI & ML</span>
+          <span style="color: #cbd5e1; font-size: 0.88rem;"><i class="fa-solid fa-laptop-code"></i> Practical Task 5</span>
+          <span style="color: #cbd5e1; font-size: 0.88rem;"><i class="fa-solid fa-building-columns"></i> College Academic Portal</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Student Study Hub. All rights reserved. Built with HTML5, CSS3 & JavaScript.</p>
+      <p>Designed for BCA AI & ML Practical Task 5</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
